@@ -63,6 +63,158 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-数据结构相关笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time datetime="2021-04-10T07:45:16.477Z" itemprop="datePublished">2021-04-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A0%81-%E5%91%BD%E4%BB%A4%E8%A1%8C/">编码&命令行</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3%E7%AC%94%E8%AE%B0/">数据结构相关笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>栈的特点是后进先出 <code>Last In First Out ,LIFO</code></p>
+<p>常见的数据存储结构：顺序存储、链式存储、索引存储、散列存储</p>
+<p>队列的特点是先进先出<code>First In First Out ,FIFO</code></p>
+<p>树<br>树有四种表示方法，见《中公电网》P23-P24</p>
+<p>二叉树</p>
+<ul>
+<li>完全二叉树</li>
+<li>满二叉树</li>
+</ul>
+<p>在二叉树的第i层至多有2<sup>i-1</sup>个节点</p>
+<p>二叉树的顺序存储，从0开始，从上到下，从左到右依次编号，不存在的节点用NULL来表示，所以顺序存储更适合完全二叉树和满二叉树。</p>
+<p>线索二叉树？？？不是很清楚还需要多了解，但是感觉考察的也不是很多</p>
+<p>树变成二叉树，如《中公电网》P32页图所示，需要注意的是第一个子女节点是该节点的左子女节点，兄弟节点转换后变成该节点的右子女节点</p>
+<p>将森林（多棵树）转换成二叉树</p>
+<p>树的深度优先遍历分为先序遍历和后序遍历</p>
+<p>森林的深度优先遍历分为先序遍历和中序遍历，从左到右遍历森林中的每一棵树，然后每棵树的遍历方法按照常规的来</p>
+<p>赫夫曼树，可以引申出赫夫曼编码</p>
+<p>无向图的边集合 $E(G)={(1,2),(1,4),(2,3),(2,5),(3,4),(3,5),(4,5)}$<br>有向图的边集合 $E(G)={&lt;1,2&gt;,&lt;2,3&gt;,&lt;3,1&gt;,&lt;1,3&gt;}$<br>即有向图的边集合中用尖括号，无向图用圆括号</p>
+<p>若图中任意两个顶点都是连通的，则称该图是连通图</p>
+<p>非连通图的极大连通子图成为连通分量</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3%E7%AC%94%E8%AE%B0/" data-id="cknbi2uqh000uqgw525qn61bz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">基础知识</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-动态规划" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/09/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" class="article-date">
+  <time datetime="2021-04-09T07:04:36.633Z" itemprop="datePublished">2021-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A0%81-%E5%91%BD%E4%BB%A4%E8%A1%8C/">编码&命令行</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/09/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">动态规划一些事</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>重叠子问题+状态转移方程+最优子结构</p>
+<p>题型：求最值（如最长公共子序列）<br>核心：穷举</p>
+<p>动态规划问题的一般形式就是求最值。比如说让你求最长递增子序列呀，最小编辑距离呀等等。</p>
+<p>求解动态规划的核心问题是穷举。因为要求最值，肯定要把所有可行的答案穷举出来，然后在其中找最值呗。</p>
+<p>动态规划问题一定会具备「最优子结构」</p>
+<p>重叠子问题、最优子结构、状态转移方程就是动态规划三要素。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/04/09/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" data-id="cknbi2upj000cqgw56o406hi5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-共识算法仿真" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/09/%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E4%BB%BF%E7%9C%9F/" class="article-date">
+  <time datetime="2021-04-09T03:51:00.567Z" itemprop="datePublished">2021-04-09</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%BC%96%E7%A0%81-%E5%91%BD%E4%BB%A4%E8%A1%8C/">编码&命令行</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/09/%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E4%BB%BF%E7%9C%9F/">一些约定俗成的代码套路</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/04/09/%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E4%BB%BF%E7%9C%9F/" data-id="cknbi2up70006qgw5ah2d1o46" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-编程技巧" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/04/09/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" class="article-date">
@@ -147,7 +299,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/04/09/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" data-id="ckn9rm69n000ticw57qcefgel" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/04/09/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/" data-id="cknbi2ur70018qgw53oemh8o6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a></li></ul>
@@ -190,7 +342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/04/08/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="ckn9rm68p0004icw5deyuelp3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/04/08/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="cknbi2upd000aqgw5eidpaqwy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li></ul>
@@ -233,7 +385,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/04/08/%E6%B5%8B%E8%AF%95/" data-id="ckn9rm69b000nicw5gnakfdj7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/04/08/%E6%B5%8B%E8%AF%95/" data-id="cknbi2ur00013qgw54ke31p35" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">环境配置</a></li></ul>
@@ -304,7 +456,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2021/04/08/Linux%E4%B8%8BSVN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" data-id="ckn9rm68j0001icw5ek19fh2b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/04/08/Linux%E4%B8%8BSVN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" data-id="cknbi2uot0001qgw571129l4g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">环境配置</a></li></ul>
@@ -347,7 +499,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/24/%E5%9C%A8IDEA%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%9B%E5%BB%BAJava_Web%E9%A1%B9%E7%9B%AE/" data-id="ckn9rm694000ficw55w9obgge" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/24/%E5%9C%A8IDEA%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%9B%E5%BB%BAJava_Web%E9%A1%B9%E7%9B%AE/" data-id="cknbi2upz000mqgw5abjhd95e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -394,7 +546,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/24/conda%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E5%8F%8Apython%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" data-id="ckn9rm68s0005icw58dr8gl8z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/06/24/conda%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E5%8F%8Apython%E7%9A%84%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" data-id="cknbi2up20004qgw571w8d8da" class="article-share-link">Share</a>
       
       
     </footer>
@@ -439,167 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/03/03/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/" data-id="ckn9rm697000hicw59gk6h7ma" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-数字取证原理与应用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/27/%E6%95%B0%E5%AD%97%E5%8F%96%E8%AF%81%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/" class="article-date">
-  <time datetime="2020-02-27T00:04:02.434Z" itemprop="datePublished">2020-02-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/27/%E6%95%B0%E5%AD%97%E5%8F%96%E8%AF%81%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/">数字取证原理与应用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>计算机取证：磁盘有没有损坏，CPU有没有被入侵<br>数字多媒体取证：网上传播的数据有没有被修改<br>可逆信息隐藏：对信道要求高，无损信道，不能被压缩</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/27/%E6%95%B0%E5%AD%97%E5%8F%96%E8%AF%81%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/" data-id="ckn9rm69a000licw5bz39borg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-机器学习与大数据分析课堂笔记（二）" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" class="article-date">
-  <time datetime="2020-02-24T06:24:37.357Z" itemprop="datePublished">2020-02-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/">机器学习与大数据分析课堂笔记（二）</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="模型评估与选择"><a href="#模型评估与选择" class="headerlink" title="模型评估与选择"></a>模型评估与选择</h2><p>精度or准确率</p>
-<p>谁准确就用谁</p>
-<p>经验误差和过拟合</p>
-<p>泛化误差</p>
-<p>一致独立分布</p>
-<p>样本分为：训练集+测试集</p>
-<p>QQQQ</p>
-<p>经验误差主要是指在测试集上的误差</p>
-<p>训练（经验）误差：训练集上</p>
-<p>测试误差：测试集</p>
-<p>泛化误差：除训练集外所有样本</p>
-<p>过拟合：</p>
-<p>欠拟合：</p>
-<p>如何把握过拟合和欠拟合之间的度？？？？</p>
-<p>是什么导致的欠拟合？</p>
-<p>学习算法导致，训练不够欠拟合，训练太过又会过拟合；</p>
-<p>样本造成，样本太少会过拟合，样本足够多才不会过拟合，泛化能力越强；</p>
-<p>模型相关，有的模型容易过拟合，有的模型容易欠拟合；</p>
-<p>样本划分方法</p>
-<p>留出法、交叉验证法、自助法</p>
-<p>性能度量</p>
-<p>泛化误差：泛化性能</p>
-<p>回归任务最常用的性能度量是“均方误差”</p>
-<p>分类的标签是离散的<br>回归的标签是连续的</p>
-<p>均方误差是个光滑的曲线，绝对值误差不是，故选择均方误差（数学上的选择问题）</p>
-<p>回归任务最常用的性能度量是均方误差</p>
-<p>分类任务的性能度量：<br>错误率、精度</p>
-<p>学习参考资料：</p>
-<p><a href="https://www.cnblogs.com/Zhi-Z/p/8728168.html" target="_blank" rel="noopener">机器学习算法中的准确率(Precision)、召回率(Recall)、F值(F-Measure)</a></p>
-<p><a href="https://blog.csdn.net/kdongyi/article/details/82930913" target="_blank" rel="noopener">准确率与召回率</a></p>
-<p>查准率：判断为正的情况下，真正判断为对的情况所占的比例</p>
-<p>普遍性的规律：偏差</p>
-<p>个别性的规律：方差</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89/" data-id="ckn9rm69q000xicw52kfe4650" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-机器学习与大数据分析学习资料" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" class="article-date">
-  <time datetime="2020-02-24T06:23:59.412Z" itemprop="datePublished">2020-02-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/">机器学习与大数据分析学习资料整理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" data-id="ckn9rm69i000ricw55jla2zm8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/03/03/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BC%80%E5%8F%91/" data-id="cknbi2uq3000pqgw5e67fag0x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
@@ -636,7 +628,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" rel="tag">区块链</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">环境配置</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%97%E8%AF%8D/" rel="tag">诗词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JAVA/" rel="tag">JAVA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" rel="tag">区块链</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">基础知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" rel="tag">环境配置</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%97%E8%AF%8D/" rel="tag">诗词</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%BE%E7%A8%8B/" rel="tag">课程</a></li></ul>
     </div>
   </div>
 
@@ -646,7 +638,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/JAVA/" style="font-size: 13.33px;">JAVA</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" style="font-size: 13.33px;">区块链</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" style="font-size: 13.33px;">环境配置</a> <a href="/tags/%E8%AF%97%E8%AF%8D/" style="font-size: 16.67px;">诗词</a> <a href="/tags/%E8%AF%BE%E7%A8%8B/" style="font-size: 20px;">课程</a>
+      <a href="/tags/JAVA/" style="font-size: 20px;">JAVA</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" style="font-size: 13.33px;">区块链</a> <a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 10px;">基础知识</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" style="font-size: 13.33px;">环境配置</a> <a href="/tags/%E8%AF%97%E8%AF%8D/" style="font-size: 16.67px;">诗词</a> <a href="/tags/%E8%AF%BE%E7%A8%8B/" style="font-size: 20px;">课程</a>
     </div>
   </div>
 
@@ -668,23 +660,23 @@
       <ul>
         
           <li>
+            <a href="/2021/04/10/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3%E7%AC%94%E8%AE%B0/">数据结构相关笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/09/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">动态规划一些事</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/09/%E5%85%B1%E8%AF%86%E7%AE%97%E6%B3%95%E4%BB%BF%E7%9C%9F/">一些约定俗成的代码套路</a>
+          </li>
+        
+          <li>
             <a href="/2021/04/09/%E7%BC%96%E7%A8%8B%E6%8A%80%E5%B7%A7/">一些约定俗成的代码套路</a>
           </li>
         
           <li>
             <a href="/2021/04/08/%E5%89%8D%E7%AB%AF%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">前端设计模式</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/08/%E6%B5%8B%E8%AF%95/">Linux常用命令</a>
-          </li>
-        
-          <li>
-            <a href="/2021/04/08/Linux%E4%B8%8BSVN%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">Linux下SVN服务器搭建</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/24/%E5%9C%A8IDEA%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%88%9B%E5%BB%BAJava_Web%E9%A1%B9%E7%9B%AE/">在IDEA环境下创建Java Web项目:配置tomcat和war包的生成</a>
           </li>
         
       </ul>
